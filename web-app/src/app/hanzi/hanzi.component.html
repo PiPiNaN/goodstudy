@@ -1,0 +1,25 @@
+<p>hanzi works!</p>
+
+
+<div class="container align-self-center">
+  <p class="mx-auto" style="font-size:300%">{{pinyin}}</p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" id="grid-background-target">
+    <line x1="0" y1="0" x2="400" y2="0" stroke="#DDD" stroke-width="3" />
+    <line x1="400" y1="0" x2="400" y2="400" stroke="#DDD" stroke-width="3" />
+    <line x1="400" y1="400" x2="0" y2="400" stroke="#DDD" stroke-width="3" />
+    <line x1="0" y1="400" x2="0" y2="0" stroke="#DDD" stroke-width="3" />
+    <line x1="0" y1="0" x2="400" y2="400" stroke="#DDD" stroke-width="3" />
+    <line x1="0" y1="400" x2="400" y2="0" stroke="#DDD" stroke-width="3" />
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#DDD" stroke-width="3" />
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#DDD" stroke-width="3" />
+  </svg>
+  <p></p>
+  <div class="m-auto">
+    <button type="button" class="btn btn-primary" (click)="onTest()">测试</button>
+    <button type="button" class="btn btn-primary" (click)="onAnimation()">动画演示</button>
+    <button type="button" class="btn btn-primary" (click)="onPre()">上一个</button>
+    <input type="number" [(ngModel)]="id" placeholder="0" (keyup.enter)="onThis()" />
+    <button type="button" class="btn btn-primary" (click)="onNext()">下一个</button>
+  </div>
+
+</div>
